@@ -1,17 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import Container from "../Container";
+import { useAuth } from "../../hooks/useAuth";
 
 const Navbar = () => {
-  //   const { user, logoutUser } = useAuth();
+  const { user, logoutUser } = useAuth();
 
-  //   const [isAdmin] = useAdmin();
-  //   const [isInstructor] = useInstructor();
-
-  //   const handleLogout = () => {
-  //     logoutUser()
-  //       .then(() => {})
-  //       .catch(() => {});
-  //   };
+  const handleLogout = () => {
+    logoutUser()
+      .then(() => {})
+      .catch(() => {});
+  };
   const navItem = (
     <>
       <li>
@@ -30,26 +28,30 @@ const Navbar = () => {
   );
   const userMenu = (
     <>
-      {/* {user ? ( */}
-      <>
-        <div className="dropdown dropdown-end">
-          <label
-            tabIndex={0}
-            className="text-gray-800 bg-gray-100 hover:cursor-pointer"
-          >
-            <Link to="/login">
-              <button className="bg-purple-500 hover:bg-purple-600 duration-300 text-gray-200 px-4 py-2 rounded-md">
-                Login
+      {user ? (
+        <>
+          <div className="dropdown dropdown-end">
+            <button
+              onClick={handleLogout}
+              className="bg-purple-500 hover:bg-purple-600 duration-300 text-gray-200 px-4 py-2 rounded-md"
+            >
+              Logout
+            </button>
+            <Link to="/user-profile">
+              <button className="border-2 border-purple-500 hover:bg-purple-600 hover:text-gray-200 duration-300 text-gray-800 px-4 py-2 ml-2 rounded-md">
+                {user?.displayName}
               </button>
             </Link>
-          </label>
-        </div>
-      </>
-      {/* ) : (
-        <Link to="/login" className="btn">
+          </div>
+        </>
+      ) : (
+        <Link
+          to="/login"
+          className="bg-purple-500 hover:bg-purple-600 duration-300 text-gray-200 px-4 py-2 rounded-md"
+        >
           Login
         </Link>
-      )} */}
+      )}
     </>
   );
   return (
