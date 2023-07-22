@@ -1,8 +1,15 @@
+import Container from "../../components/Container";
+import Colleges from "./Colleges/Colleges";
+import Search from "./Search/Search";
+
 const Homepage = () => {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <Container>
+      <>
+        <Search />
+        <Colleges />
+      </>
+    </Container>
   );
 };
 

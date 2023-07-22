@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import Container from "../Container";
+// import Container from "../Container";
 import { useAuth } from "../../hooks/useAuth";
 
 const Navbar = () => {
@@ -55,8 +55,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <Container>
-      <div className="navbar bg-[#F1F0F0] p-0 mb-10">
+    <>
+      <div className="navbar bg-[#F1F0F0] drop-shadow-md px-48 mb-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden ">
@@ -95,7 +95,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end my-nav">{userMenu}</div>
       </div>
-    </Container>
+    </>
   );
 };
 
