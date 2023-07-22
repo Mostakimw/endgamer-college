@@ -3,6 +3,7 @@ import Container from "../../components/Container";
 import SectionTitle from "../../components/SectionTitle";
 
 const MyCollege = () => {
+  // const targatedCandidate =
   return (
     <Container>
       <div>

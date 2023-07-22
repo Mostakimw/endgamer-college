@@ -8,6 +8,7 @@ import AllColleges from "../pages/Colleges/AllColleges";
 import Admission from "../pages/Admission/Admission";
 import MyCollege from "../pages/MyCollege/MyCollege";
 import ApplyCollege from "../pages/ApplyCollege/ApplyCollege";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -28,13 +29,21 @@ export const router = createBrowserRouter([
       },
       {
         path: "admission/:collegeId",
-        element: <ApplyCollege />,
+        element: (
+          <PrivateRoute>
+            <ApplyCollege />
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/college/${params.collegeId}`),
       },
       {
         path: "my-college",
-        element: <MyCollege />,
+        element: (
+          <PrivateRoute>
+            <MyCollege />
+          </PrivateRoute>
+        ),
       },
       {
         path: "login",
