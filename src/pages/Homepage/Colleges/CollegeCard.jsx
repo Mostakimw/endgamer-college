@@ -13,7 +13,7 @@ const CollegeCard = ({ college }) => {
   console.log(events);
   return (
     <div style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-      <div className="container px-5 py-24 mx-auto" style={{ cursor: "auto" }}>
+      <div className="container px-5 mt-10 mx-auto" style={{ cursor: "auto" }}>
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <img
             alt="collegePic"
@@ -69,9 +69,11 @@ const CollegeCard = ({ college }) => {
               <h3 className="text-lg font-semibold mb-2">Sports</h3>
               <p className="text-gray-500">{sportsDescription}</p>
             </div>
-            <button className="bg-purple-500 text-white mt-6 px-4 py-2 rounded hover:bg-purple-600 duration-300">
-              Details About This College
-            </button>
+            <Link>
+              <button className="bg-purple-500 text-white mt-6 px-4 py-2 rounded hover:bg-purple-600 duration-300">
+                Details About This College
+              </button>
+            </Link>
           </div>
         </div>
       </div>

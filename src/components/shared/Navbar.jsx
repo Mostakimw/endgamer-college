@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-// import Container from "../Container";
 import { useAuth } from "../../hooks/useAuth";
 
 const Navbar = () => {
@@ -16,13 +15,13 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/instructors">Colleges</NavLink>
+        <NavLink to="/colleges">Colleges</NavLink>
       </li>
       <li>
-        <NavLink to="/classes">Admission</NavLink>
+        <NavLink to="/admission">Admission</NavLink>
       </li>
       <li>
-        <NavLink to="/classes">My College</NavLink>
+        <NavLink to="/my-college">My College</NavLink>
       </li>
     </>
   );
