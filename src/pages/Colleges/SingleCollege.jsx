@@ -1,3 +1,5 @@
+import { FaRegStar, FaStar } from "react-icons/fa";
+import Rating from "react-rating";
 import { Link } from "react-router-dom";
 
 const SingleCollege = ({ college }) => {
@@ -30,13 +32,19 @@ const SingleCollege = ({ college }) => {
           <p>
             Research: <span className="text-[#757575] text-sm">50</span>
           </p>
-          <p>
-            Rating: <span className="text-[#757575] text-sm">5</span>
+          <p className="flex items-center gap-2">
+            <span>Rating: </span>
+            <Rating
+              placeholderRating={4.5}
+              emptySymbol={<FaRegStar></FaRegStar>}
+              placeholderSymbol={<FaStar className="text-yellow-500"></FaStar>}
+              fullSymbol={<FaStar></FaStar>}
+            />
           </p>
         </div>
         <div className="card-actions justify-center">
           <Link>
-            <button className="bg-purple-500 text-white mt-6 px-4 py-2 rounded hover:bg-purple-600 duration-300">
+            <button className="bg-purple-500 text-white mt-6 px-8 py-2 font-semibold rounded hover:bg-purple-600 duration-300">
               Details
             </button>
           </Link>
