@@ -1,0 +1,85 @@
+[
+  {
+    "_id": 1,
+    "collegeName": "Sample College",
+    "admissionDateStart": "25th August, 2023",
+    "admissionDateEnd": "24th September, 2023",
+    "collegeImage": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "collegeRating": 4.8,
+    "numberOfResearch": 25,
+    "events": [
+      {
+        "id": 1,
+        "name": "Seminar on Digital Marketing",
+        "date": "30th August, 2023"
+      },
+      {
+        "id": 2,
+        "name": "Cultural Fest",
+        "date": "5th September, 2023"
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 1,
+        "title": "Research Title 1",
+        "authors": ["John Doe", "Jane Smith"],
+        "abstract": "Lorem ipsum dolor sit amet...",
+        "publication": "Journal of Science",
+        "publicationDate": "10th August, 2023",
+        "link": "research-link-1"
+      },
+      {
+        "id": 2,
+        "title": "Research Title 2",
+        "authors": ["Michael Brown", "Sarah Johnson"],
+        "abstract": "Lorem ipsum dolor sit amet...",
+        "publication": "Conference on Technology",
+        "publicationDate": "15th August, 2023",
+        "link": "research-link-2"
+      }
+    ],
+    "sportsDescription": "Sample College encourages sports and provides state-of-the-art facilities for students to excel in various sports activities.",
+    "sportsCategories": [
+      {
+        "id": 1,
+        "name": "Football",
+        "facilities": "Football Field, Changing Rooms, Football Equipment",
+        "teams": ["College Football Team"],
+        "upcomingEvent": "Football Tournament - 2nd September, 2023"
+      },
+      {
+        "id": 2,
+        "name": "Basketball",
+        "facilities": "Basketball Court, Changing Rooms, Basketball Equipment",
+        "teams": ["College Basketball Team"],
+        "upcomingEvent": "Basketball Championship - 5th September, 2023"
+      },
+      {
+        "id": 3,
+        "name": "Tennis",
+        "facilities": "Tennis Court, Changing Rooms, Tennis Equipment",
+        "teams": ["College Tennis Team"],
+        "upcomingEvent": "Tennis Tournament - 10th September, 2023"
+      }
+    ],
+    "researchPaperLinks": [
+      {
+        "id": 1,
+        "title": "Research Paper 1",
+        "authors": ["John Doe"],
+        "publication": "Journal of Science",
+        "publicationDate": "5th August, 2023",
+        "link": "research-paper-link-1"
+      },
+      {
+        "id": 2,
+        "title": "Research Paper 2",
+        "authors": ["Jane Smith"],
+        "publication": "Conference on Technology",
+        "publicationDate": "10th August, 2023",
+        "link": "research-paper-link-2"
+      }
+    ]
+  }
+]

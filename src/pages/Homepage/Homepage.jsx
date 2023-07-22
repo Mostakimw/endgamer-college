@@ -1,5 +1,6 @@
 import Container from "../../components/Container";
 import Colleges from "./Colleges/Colleges";
+import ImageGallery from "./ImageGallery/ImageGallery";
 import Search from "./Search/Search";
 
 const Homepage = () => {
@@ -8,6 +9,7 @@ const Homepage = () => {
       <>
         <Search />
         <Colleges />
+        <ImageGallery />
       </>
     </Container>
   );
