@@ -7,6 +7,7 @@ import UserProfile from "../pages/UserProfile/UserProfile";
 import AllColleges from "../pages/Colleges/AllColleges";
 import Admission from "../pages/Admission/Admission";
 import MyCollege from "../pages/MyCollege/MyCollege";
+import ApplyCollege from "../pages/ApplyCollege/ApplyCollege";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
       {
         path: "admission",
         element: <Admission />,
+      },
+      {
+        path: "admission/applying-college",
+        element: <ApplyCollege />,
       },
       {
         path: "my-college",

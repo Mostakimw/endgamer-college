@@ -1,20 +1,11 @@
-import { useEffect, useState } from "react";
 import Container from "../../components/Container";
 import SingleCollege from "./SingleCollege";
+import useColleges from "../../hooks/useColleges";
 
 const AllColleges = () => {
-  const [colleges, setColleges] = useState([]);
+  const [colleges] = useColleges();
+  console.log(colleges);
 
-  useEffect(() => {
-    fetch("/data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setColleges(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
   return (
     <Container>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
