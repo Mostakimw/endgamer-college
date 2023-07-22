@@ -1,8 +1,17 @@
+import { Helmet } from "react-helmet-async";
+import Container from "../../components/Container";
+import SectionTitle from "../../components/SectionTitle";
+
 const MyCollege = () => {
   return (
-    <div>
-      <h1>my college</h1>
-    </div>
+    <Container>
+      <div>
+        <Helmet>
+          <title>My College - EndGamer College</title>
+        </Helmet>
+        <SectionTitle title="Admission" />
+      </div>
+    </Container>
   );
 };
 

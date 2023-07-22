@@ -1,9 +1,14 @@
 import { Helmet } from "react-helmet-async";
 import SectionTitle from "../../components/SectionTitle";
 import Container from "../../components/Container";
+import axios from "axios";
+import Swal from "sweetalert2";
+import { useLoaderData } from "react-router-dom";
 
 const ApplyCollege = () => {
-  const handleSubmitForm = (event) => {
+  const collegeData = useLoaderData();
+  console.log(collegeData);
+  const handleSubmitForm = async (event) => {
     event.preventDefault();
     const form = event.target;
     const candidateName = form.candidateName.value;
@@ -12,20 +17,40 @@ const ApplyCollege = () => {
     const phone = form.phone.value;
     const subject = form.subject.value;
     const address = form.address.value;
-    console.log(
+    const candidateData = {
+      collegeData,
       candidateName,
       candidateProfilePic,
       email,
       phone,
       subject,
-      address
+      address,
+    };
+
+    console.log(candidateData);
+    const res = await axios.post(
+      `${import.meta.env.VITE_API_LINK}/candidates`,
+      candidateData,
+      {
+        headers: {
+          "content-type": "application/json",
+        },
+      }
     );
+    console.log(res.data);
+    if (res.data.insertedId) {
+      Swal.fire({
+        icon: "success",
+        title: "Great...",
+        text: "Your has been applied successfully!",
+      });
+    }
   };
   return (
     <Container>
       <div>
         <Helmet>
-          <title>Admission - WarriorCamp</title>
+          <title>Apply - EndGamer College</title>
         </Helmet>
         <SectionTitle title="First Step TO Grow Future" />
         <form

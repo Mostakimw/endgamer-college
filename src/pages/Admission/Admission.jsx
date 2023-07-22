@@ -10,7 +10,7 @@ const Admission = () => {
     <Container>
       <div className="w-full">
         <Helmet>
-          <title>Admission - WarriorCamp</title>
+          <title>Admission - EndGamer College</title>
         </Helmet>
         <SectionTitle title="Admission" />
 
@@ -43,7 +43,7 @@ const Admission = () => {
                   </td>
                   <td className="font-semibold text-xl text-gray-800 ">
                     <Link
-                      to="/admission/applying-college"
+                      to={`/admission/${college?.collegeId}`}
                       className="hover:underline"
                     >
                       {college?.collegeName}
