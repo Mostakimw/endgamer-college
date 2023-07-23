@@ -124,7 +124,7 @@ const Register = () => {
                 />
               </div>
               <div onClick={handleRegister} className="form-control mt-6">
-                <button className="btn bg-[#c84c30] hover:bg-[#cd320f] border-none">
+                <button className="btn bg-purple-500 hover:bg-purple-600 duration-300 text-white  border-none">
                   Register
                 </button>
               </div>

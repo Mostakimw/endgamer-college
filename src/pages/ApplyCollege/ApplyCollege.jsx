@@ -15,7 +15,7 @@ const ApplyCollege = () => {
     const form = event.target;
     const candidateName = form.candidateName.value;
     const candidateProfilePic = form.profilePic.value;
-    const email = form.email.value;
+    // const email = form.email.value;
     const phone = form.phone.value;
     const subject = form.subject.value;
     const address = form.address.value;
@@ -23,7 +23,7 @@ const ApplyCollege = () => {
       collegeData,
       candidateName,
       candidateProfilePic,
-      email,
+      email: user?.email,
       phone,
       subject,
       address,
@@ -95,7 +95,8 @@ const ApplyCollege = () => {
             <input
               type="text"
               name="email"
-              value={user?.email}
+              defaultValue={user?.email}
+              readOnly
               className="w-2/3 py-2 add-class-input px-2 text-[#757575]"
             />
           </div>
@@ -118,7 +119,9 @@ const ApplyCollege = () => {
           </div>
 
           <div className="w-1/3 mx-auto mt-8 pb-6 col-span-2">
-            <button className="btn btn-primary w-full">Apply</button>
+            <button className="bg-purple-500 hover:bg-purple-600 duration-300 py-4 w-full">
+              Apply
+            </button>
           </div>
         </form>
       </div>

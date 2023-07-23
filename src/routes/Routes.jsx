@@ -12,11 +12,13 @@ import PrivateRoute from "./PrivateRoute";
 import CollegeDetails from "../pages/CollegeDetails/CollegeDetails";
 import EditProfile from "../pages/EditProfile/EditProfile";
 import ResetPassword from "../pages/ResetPassword/ResetPassword";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

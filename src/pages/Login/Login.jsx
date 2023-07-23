@@ -86,7 +86,7 @@ const Login = () => {
             <div className="form-control mt-6">
               <button
                 onClick={loginHandle}
-                className="btn bg-[#c84c30] hover:bg-[#cd320f] border-none"
+                className="btn bg-purple-500 hover:bg-purple-600 duration-300 text-white border-none"
               >
                 Login
               </button>
