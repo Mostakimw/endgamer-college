@@ -1,0 +1,72 @@
+[
+  {
+    "candidateName": "John Macnie",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?w=826&t=st=1690116931~exp=1690117531~hmac=0ea371c6b53fa91b2dc4fb04b0c270187f909b9b1f6f9f34fb68dce909c8b475",
+    "rating": 5,
+    "reviewDate": "July 25, 2023",
+    "reviewText": "The college has excellent facilities and a supportive faculty."
+  },
+  {
+    "candidateName": "Alice Smith",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/beautiful-woman-with-curly-blonde-hair-smiling_23-2148911877.jpg?w=1380&t=st=1690116962~exp=1690117562~hmac=be266204a1013c65a521f23858cbbc03cb4f7bf8a71e3225b251df8a97cbdd9d",
+    "rating": 4,
+    "reviewDate": "July 26, 2023",
+    "reviewText": "I had a great learning experience at this college."
+  },
+  {
+    "candidateName": "Michael Johnson",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/portrait-young-man-looking-up-isolated-white_186202-4737.jpg?w=826&t=st=1690116973~exp=1690117573~hmac=4f03c1e6bf57b152df3da8342c326d4c1175478163ba7fe8d729921c986eccf9",
+    "rating": 3,
+    "reviewDate": "July 27, 2023",
+    "reviewText": "The college provides good research opportunities."
+  },
+  {
+    "candidateName": "Emily Brown",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/portrait-cute-smiley-woman_23-2148728645.jpg?w=826&t=st=1690117110~exp=1690117710~hmac=3bc64a7ff672b413bb1a958810e7bd766b505e251a1143e1d64046726260adb4",
+    "rating": 4,
+    "reviewDate": "July 28, 2023",
+    "reviewText": "The college campus is beautiful and well-maintained."
+  },
+  {
+    "candidateName": "James Wilson",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/smiley-handsome-man-posing_23-2148911841.jpg?w=826&t=st=1690116958~exp=1690117558~hmac=14360020f6024e15a18b09b6f2a1ca361d4eb2bd3a18d4d9fd5a1bf0e5051ab2",
+    "rating": 5,
+    "reviewDate": "July 29, 2023",
+    "reviewText": "I had an enriching academic experience here."
+  },
+  {
+    "candidateName": "Sophia Lee",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/portrait-beautiful-young-adult-white-happy-woman-white-space-wearing-pink-shirt_186202-4316.jpg?w=826&t=st=1690117103~exp=1690117703~hmac=450f69251e201a53abad92eddda1230deaaee279fae53bce390432e22b9e872a",
+    "rating": 4,
+    "reviewDate": "July 30, 2023",
+    "reviewText": "The college has a friendly and diverse community."
+  },
+  {
+    "candidateName": "Jacob Martin",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-with-arms-crossed_1298-429.jpg?w=826&t=st=1690116945~exp=1690117545~hmac=b691cb3f8dedeab226e142499d8195265fecbac48ed3193127d4e63047d5a5a5",
+    "rating": 3,
+    "reviewDate": "July 31, 2023",
+    "reviewText": "The college offers great internship opportunities."
+  },
+  {
+    "candidateName": "Olivia Rodriguez",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/front-view-serious-woman_23-2148369453.jpg?w=826&t=st=1690117098~exp=1690117698~hmac=4bc1f0c8b5a320f238ce2b51137e5e36d5f2f4d61c5c2cd5ef6ad507c1844496",
+    "rating": 5,
+    "reviewDate": "August 1, 2023",
+    "reviewText": "I love the supportive and caring atmosphere at this college."
+  },
+  {
+    "candidateName": "Ethan Adams",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/portrait-smiling-young-man-with-his-arm-crossed-standing-against-orange-backdrop_23-2148119780.jpg?w=826&t=st=1690116935~exp=1690117535~hmac=cfd8628ebcb7cb3464732284b0401fa93a5189c6e23fe696bc6aef6d573981dc",
+    "rating": 4,
+    "reviewDate": "August 2, 2023",
+    "reviewText": "The college has excellent sports facilities."
+  },
+  {
+    "candidateName": "Ava White",
+    "candidateProfilePic": "https://img.freepik.com/free-photo/portrait-smiling-blonde-woman_23-2148316635.jpg?w=826&t=st=1690117091~exp=1690117691~hmac=1fb05229059ca14188cf3afd3ddb6bb34febd33d1499a4287a5fc3d78772e220",
+    "rating": 5,
+    "reviewDate": "August 3, 2023",
+    "reviewText": "The college has a strong focus on research and innovation."
+  }
+]

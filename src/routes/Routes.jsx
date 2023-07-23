@@ -19,6 +19,7 @@ export const router = createBrowserRouter([
     path: "/",
     element: <MainLayout />,
     errorElement: <ErrorPage />,
+
     children: [
       {
         path: "/",
@@ -74,12 +75,19 @@ export const router = createBrowserRouter([
       },
       {
         path: "user-profile",
-        element: <UserProfile />,
+        element: (
+          <PrivateRoute>
+            <UserProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "edit-profile",
-        element: <EditProfile />,
-        // loader: ({params})=> fetch(`${import.meta.env.VITE_API_LINK}/users?email=${user?.email}`)
+        element: (
+          <PrivateRoute>
+            <EditProfile />
+          </PrivateRoute>
+        ),
       },
     ],
   },

@@ -1,16 +1,22 @@
 [
   {
-    "_id": 1,
-    "collegeName": "Sample College",
+    "collegeName": "TechGenius University",
+    "location": "California, USA",
     "admissionDateStart": "25th August, 2023",
     "admissionDateEnd": "24th September, 2023",
     "collegeImage": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "admissionProcess": [
+      "Prospective students fill out an application form providing their personal and educational details.",
+      "Applications are carefully reviewed, and eligible students are selected for admission.",
+      "Admitted students complete the necessary documentation and pay fees to secure their place in the university."
+    ],
     "collegeRating": 4.8,
     "numberOfResearch": 25,
     "events": [
       {
         "id": 1,
-        "name": "Seminar on Digital Marketing",
+        "name": "AI Innovation Summit",
+        "description": "Join us at the AI Innovation Summit 2023 to explore the latest trends, advancements, and applications of Artificial Intelligence. The event will feature renowned AI experts and industry leaders.",
         "date": "30th August, 2023"
       },
       {
@@ -22,51 +28,51 @@
     "researchWorks": [
       {
         "id": 1,
-        "title": "Research Title 1",
+        "title": "Advancements in Robotics",
         "authors": ["John Doe", "Jane Smith"],
-        "abstract": "Lorem ipsum dolor sit amet...",
+        "abstract": "This research explores the latest advancements in robotic technologies, including AI-powered autonomous systems and human-robot collaboration.",
         "publication": "Journal of Science",
         "publicationDate": "10th August, 2023",
         "link": "research-link-1"
       },
       {
         "id": 2,
-        "title": "Research Title 2",
+        "title": "Machine Learning Applications",
         "authors": ["Michael Brown", "Sarah Johnson"],
-        "abstract": "Lorem ipsum dolor sit amet...",
+        "abstract": "This research paper delves into practical applications of machine learning algorithms in various domains, including healthcare and finance.",
         "publication": "Conference on Technology",
         "publicationDate": "15th August, 2023",
         "link": "research-link-2"
       }
     ],
-    "sportsDescription": "Sample College encourages sports and provides state-of-the-art facilities for students to excel in various sports activities.",
+    "sportsDescription": "TechGenius University encourages sports and provides state-of-the-art facilities for students to excel in various sports activities.",
     "sportsCategories": [
       {
         "id": 1,
         "name": "Football",
         "facilities": "Football Field, Changing Rooms, Football Equipment",
-        "teams": ["College Football Team"],
+        "teams": ["University Football Team"],
         "upcomingEvent": "Football Tournament - 2nd September, 2023"
       },
       {
         "id": 2,
         "name": "Basketball",
         "facilities": "Basketball Court, Changing Rooms, Basketball Equipment",
-        "teams": ["College Basketball Team"],
+        "teams": ["University Basketball Team"],
         "upcomingEvent": "Basketball Championship - 5th September, 2023"
       },
       {
         "id": 3,
         "name": "Tennis",
         "facilities": "Tennis Court, Changing Rooms, Tennis Equipment",
-        "teams": ["College Tennis Team"],
+        "teams": ["University Tennis Team"],
         "upcomingEvent": "Tennis Tournament - 10th September, 2023"
       }
     ],
     "researchPaperLinks": [
       {
         "id": 1,
-        "title": "Research Paper 1",
+        "title": "AI Ethics and Explainability",
         "authors": ["John Doe"],
         "publication": "Journal of Science",
         "publicationDate": "5th August, 2023",
@@ -74,178 +80,469 @@
       },
       {
         "id": 2,
-        "title": "Research Paper 2",
+        "title": "Data Privacy in ML Systems",
         "authors": ["Jane Smith"],
         "publication": "Conference on Technology",
         "publicationDate": "10th August, 2023",
         "link": "research-paper-link-2"
       }
-    ]
+    ],
+    "collegeId": "5454"
   },
   {
-    "_id": 1,
-    "collegeName": "Sample College",
-    "admissionDateStart": "25th August, 2023",
-    "admissionDateEnd": "24th September, 2023",
-    "collegeImage": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
-    "collegeRating": 4.8,
-    "numberOfResearch": 25,
+    "collegeName": "InnovateTech Institute",
+    "location": "New York, USA",
+    "admissionDateStart": "10th September, 2023",
+    "admissionDateEnd": "30th September, 2023",
+    "collegeImage": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "admissionProcess": [
+      "Prospective students complete an online application form with their personal and academic details.",
+      "Applications are evaluated, and eligible candidates are shortlisted for interviews or entrance exams.",
+      "Selected students complete the admission formalities, including document verification and fee payment."
+    ],
+    "collegeRating": 4.6,
+    "numberOfResearch": 30,
     "events": [
       {
         "id": 1,
-        "name": "Seminar on Digital Marketing",
-        "date": "30th August, 2023"
+        "name": "TechCon 2023",
+        "description": "Join InnovateTech Institute at TechCon 2023, a technology conference featuring keynote speeches, workshops, and networking opportunities with industry experts.",
+        "date": "15th October, 2023"
       },
       {
         "id": 2,
-        "name": "Cultural Fest",
-        "date": "5th September, 2023"
+        "name": "Cultural Extravaganza",
+        "description": "Experience the cultural diversity at InnovateTech Institute's annual event featuring dance performances, art exhibitions, and food from around the world.",
+        "date": "20th November, 2023"
       }
     ],
     "researchWorks": [
       {
         "id": 1,
-        "title": "Research Title 1",
-        "authors": ["John Doe", "Jane Smith"],
-        "abstract": "Lorem ipsum dolor sit amet...",
-        "publication": "Journal of Science",
-        "publicationDate": "10th August, 2023",
+        "title": "The Future of Artificial Intelligence",
+        "authors": ["Alex Johnson", "Emily Carter"],
+        "abstract": "This research discusses the future potential and ethical considerations of AI in various industries.",
+        "publication": "Journal of Technology",
+        "publicationDate": "5th September, 2023",
         "link": "research-link-1"
       },
       {
         "id": 2,
-        "title": "Research Title 2",
-        "authors": ["Michael Brown", "Sarah Johnson"],
-        "abstract": "Lorem ipsum dolor sit amet...",
-        "publication": "Conference on Technology",
-        "publicationDate": "15th August, 2023",
+        "title": "Advancements in Renewable Energy",
+        "authors": ["Michael Lee", "Sophia Green"],
+        "abstract": "This research paper presents recent breakthroughs and applications in renewable energy technologies.",
+        "publication": "Conference on Sustainability",
+        "publicationDate": "12th September, 2023",
         "link": "research-link-2"
       }
     ],
-    "sportsDescription": "Sample College encourages sports and provides state-of-the-art facilities for students to excel in various sports activities.",
+    "sportsDescription": "InnovateTech Institute promotes sports and offers state-of-the-art facilities to support students' physical well-being and sportsmanship.",
     "sportsCategories": [
       {
         "id": 1,
-        "name": "Football",
-        "facilities": "Football Field, Changing Rooms, Football Equipment",
-        "teams": ["College Football Team"],
-        "upcomingEvent": "Football Tournament - 2nd September, 2023"
+        "name": "Soccer",
+        "facilities": "Soccer Field, Changing Rooms, Soccer Equipment",
+        "teams": ["Institute Soccer Team"],
+        "upcomingEvent": "Soccer League - 5th October, 2023"
       },
       {
         "id": 2,
         "name": "Basketball",
         "facilities": "Basketball Court, Changing Rooms, Basketball Equipment",
-        "teams": ["College Basketball Team"],
-        "upcomingEvent": "Basketball Championship - 5th September, 2023"
+        "teams": ["Institute Basketball Team"],
+        "upcomingEvent": "Basketball Championship - 10th October, 2023"
       },
       {
         "id": 3,
-        "name": "Tennis",
-        "facilities": "Tennis Court, Changing Rooms, Tennis Equipment",
-        "teams": ["College Tennis Team"],
-        "upcomingEvent": "Tennis Tournament - 10th September, 2023"
+        "name": "Swimming",
+        "facilities": "Swimming Pool, Changing Rooms, Swimming Gear",
+        "teams": ["Institute Swimming Team"],
+        "upcomingEvent": "Swimming Tournament - 15th October, 2023"
       }
     ],
     "researchPaperLinks": [
       {
         "id": 1,
-        "title": "Research Paper 1",
-        "authors": ["John Doe"],
-        "publication": "Journal of Science",
-        "publicationDate": "5th August, 2023",
+        "title": "Blockchain and Decentralized Applications",
+        "authors": ["Alex Johnson"],
+        "publication": "Journal of Technology",
+        "publicationDate": "8th September, 2023",
         "link": "research-paper-link-1"
       },
       {
         "id": 2,
-        "title": "Research Paper 2",
-        "authors": ["Jane Smith"],
-        "publication": "Conference on Technology",
-        "publicationDate": "10th August, 2023",
+        "title": "Advances in Biotechnology",
+        "authors": ["Emily Carter"],
+        "publication": "Conference on Life Sciences",
+        "publicationDate": "14th September, 2023",
         "link": "research-paper-link-2"
       }
-    ]
+    ],
+    "collegeId": "7391"
+  },
+
+  {
+    "collegeName": "TechVoyager University",
+    "location": "London, UK",
+    "admissionDateStart": "1st October, 2023",
+    "admissionDateEnd": "30th November, 2023",
+    "collegeImage": "https://images.unsplash.com/photo-1622604647545-0cada2f34470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "admissionProcess": [
+      "Prospective students submit online applications, detailing their academic background and extracurricular achievements.",
+      "Eligible applicants are invited for a personalized interview to assess their passion for technology and innovation.",
+      "Successful candidates complete the enrollment process, including document verification and fee payment."
+    ],
+    "collegeRating": 4.9,
+    "numberOfResearch": 40,
+    "events": [
+      {
+        "id": 1,
+        "name": "TechXplore Summit",
+        "description": "Join TechVoyager University at TechXplore Summit 2023, a global gathering of tech enthusiasts, featuring workshops and tech demos.",
+        "date": "15th November, 2023"
+      },
+      {
+        "id": 2,
+        "name": "Cultural Fusion Fest",
+        "description": "Experience the harmony of cultures at Cultural Fusion Fest, celebrating diversity through music, art, and cuisines.",
+        "date": "20th December, 2023"
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 1,
+        "title": "Emerging Technologies in Healthcare",
+        "authors": ["Sophia Wright", "Daniel Patel"],
+        "abstract": "This research highlights the impact of emerging technologies, like AI and IoT, in revolutionizing healthcare.",
+        "publication": "Journal of Technology and Medicine",
+        "publicationDate": "5th October, 2023",
+        "link": "research-link-1"
+      },
+      {
+        "id": 2,
+        "title": "Sustainable Innovations in Energy",
+        "authors": ["Oliver Green", "Isabella Chen"],
+        "abstract": "This research explores sustainable innovations, including renewable energy sources and energy-efficient technologies.",
+        "publication": "International Conference on Sustainability",
+        "publicationDate": "12th October, 2023",
+        "link": "research-link-2"
+      }
+    ],
+    "sportsDescription": "TechVoyager University fosters a culture of sportsmanship and provides state-of-the-art facilities to support students' sporting aspirations.",
+    "sportsCategories": [
+      {
+        "id": 1,
+        "name": "Cricket",
+        "facilities": "Cricket Ground, Changing Rooms, Cricket Equipment",
+        "teams": ["University Cricket Team"],
+        "upcomingEvent": "Cricket Championship - 5th November, 2023"
+      },
+      {
+        "id": 2,
+        "name": "Badminton",
+        "facilities": "Badminton Courts, Changing Rooms, Badminton Equipment",
+        "teams": ["University Badminton Team"],
+        "upcomingEvent": "Badminton Tournament - 10th November, 2023"
+      },
+      {
+        "id": 3,
+        "name": "Swimming",
+        "facilities": "Swimming Pool, Changing Rooms, Swimming Gear",
+        "teams": ["University Swimming Team"],
+        "upcomingEvent": "Swimming Meet - 15th November, 2023"
+      }
+    ],
+    "researchPaperLinks": [
+      {
+        "id": 1,
+        "title": "Space Exploration and Colonization",
+        "authors": ["James Anderson"],
+        "publication": "Journal of Space Science",
+        "publicationDate": "8th October, 2023",
+        "link": "research-paper-link-1"
+      },
+      {
+        "id": 2,
+        "title": "Human-Computer Interaction Trends",
+        "authors": ["Emma Walker"],
+        "publication": "Conference on Human-Computer Interaction",
+        "publicationDate": "14th October, 2023",
+        "link": "research-paper-link-2"
+      }
+    ],
+    "collegeId": "1001"
   },
   {
-    "_id": 1,
-    "collegeName": "Sample College",
-    "admissionDateStart": "25th August, 2023",
-    "admissionDateEnd": "24th September, 2023",
-    "collegeImage": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
-    "collegeRating": 4.8,
-    "numberOfResearch": 25,
+    "collegeName": "QuantumTech Institute",
+    "location": "Tokyo, Japan",
+    "admissionDateStart": "1st December, 2023",
+    "admissionDateEnd": "31st January, 2024",
+    "collegeImage": "https://www.goshen.edu/wp-content/uploads/2020/10/left1.jpg",
+    "admissionProcess": [
+      "Aspiring students submit applications with their academic records and a personal statement highlighting their passion for quantum technology.",
+      "Shortlisted candidates undergo a rigorous selection process, including written tests and interviews.",
+      "Admitted students complete the enrollment formalities to secure their seats at QuantumTech Institute."
+    ],
+    "collegeRating": 4.7,
+    "numberOfResearch": 50,
     "events": [
       {
         "id": 1,
-        "name": "Seminar on Digital Marketing",
-        "date": "30th August, 2023"
+        "name": "QuantumTech Expo",
+        "description": "Participate in the QuantumTech Expo 2024, a pioneering event showcasing breakthroughs in quantum computing and quantum communication.",
+        "date": "15th February, 2024"
       },
       {
         "id": 2,
-        "name": "Cultural Fest",
-        "date": "5th September, 2023"
+        "name": "International Cultural Festival",
+        "description": "Experience the diversity of cultures at the International Cultural Festival, featuring performances, workshops, and international cuisine.",
+        "date": "20th March, 2024"
       }
     ],
     "researchWorks": [
       {
         "id": 1,
-        "title": "Research Title 1",
-        "authors": ["John Doe", "Jane Smith"],
-        "abstract": "Lorem ipsum dolor sit amet...",
-        "publication": "Journal of Science",
-        "publicationDate": "10th August, 2023",
+        "title": "Quantum Computing Algorithms",
+        "authors": ["Hiroshi Tanaka", "Liu Mei"],
+        "abstract": "This research explores quantum algorithms and their potential applications in solving complex problems.",
+        "publication": "Journal of Quantum Computing",
+        "publicationDate": "5th January, 2024",
         "link": "research-link-1"
       },
       {
         "id": 2,
-        "title": "Research Title 2",
-        "authors": ["Michael Brown", "Sarah Johnson"],
-        "abstract": "Lorem ipsum dolor sit amet...",
-        "publication": "Conference on Technology",
-        "publicationDate": "15th August, 2023",
+        "title": "Quantum Cryptography Advancements",
+        "authors": ["Sophie Lee", "Akira Suzuki"],
+        "abstract": "This research paper discusses advancements in quantum cryptography for secure communication.",
+        "publication": "Conference on Quantum Technologies",
+        "publicationDate": "12th January, 2024",
         "link": "research-link-2"
       }
     ],
-    "sportsDescription": "Sample College encourages sports and provides state-of-the-art facilities for students to excel in various sports activities.",
+    "sportsDescription": "QuantumTech Institute promotes physical fitness and offers excellent sports facilities for students to engage in various sports activities.",
     "sportsCategories": [
       {
         "id": 1,
-        "name": "Football",
-        "facilities": "Football Field, Changing Rooms, Football Equipment",
-        "teams": ["College Football Team"],
-        "upcomingEvent": "Football Tournament - 2nd September, 2023"
+        "name": "Table Tennis",
+        "facilities": "Table Tennis Hall, Changing Rooms, Table Tennis Equipment",
+        "teams": ["University Table Tennis Team"],
+        "upcomingEvent": "Table Tennis Tournament - 5th February, 2024"
       },
       {
         "id": 2,
-        "name": "Basketball",
-        "facilities": "Basketball Court, Changing Rooms, Basketball Equipment",
-        "teams": ["College Basketball Team"],
-        "upcomingEvent": "Basketball Championship - 5th September, 2023"
+        "name": "Karate",
+        "facilities": "Karate Dojo, Changing Rooms, Karate Equipment",
+        "teams": ["University Karate Team"],
+        "upcomingEvent": "Karate Championship - 10th February, 2024"
       },
       {
         "id": 3,
-        "name": "Tennis",
-        "facilities": "Tennis Court, Changing Rooms, Tennis Equipment",
-        "teams": ["College Tennis Team"],
-        "upcomingEvent": "Tennis Tournament - 10th September, 2023"
+        "name": "Swimming",
+        "facilities": "Swimming Pool, Changing Rooms, Swimming Gear",
+        "teams": ["University Swimming Team"],
+        "upcomingEvent": "Swimming Meet - 15th February, 2024"
       }
     ],
     "researchPaperLinks": [
       {
         "id": 1,
-        "title": "Research Paper 1",
-        "authors": ["John Doe"],
-        "publication": "Journal of Science",
-        "publicationDate": "5th August, 2023",
+        "title": "Quantum Teleportation and Communication",
+        "authors": ["Hiroshi Tanaka"],
+        "publication": "Journal of Quantum Physics",
+        "publicationDate": "8th January, 2024",
         "link": "research-paper-link-1"
       },
       {
         "id": 2,
-        "title": "Research Paper 2",
-        "authors": ["Jane Smith"],
-        "publication": "Conference on Technology",
-        "publicationDate": "10th August, 2023",
+        "title": "Quantum Sensing and Imaging",
+        "authors": ["Sophie Lee"],
+        "publication": "Conference on Quantum Technologies",
+        "publicationDate": "14th January, 2024",
         "link": "research-paper-link-2"
       }
-    ]
+    ],
+    "collegeId": "2497"
+  },
+  {
+    "collegeName": "WonderTech University",
+    "location": "Sydney, Australia",
+    "admissionDateStart": "1st February, 2024",
+    "admissionDateEnd": "28th February, 2024",
+    "collegeImage": "https://ramanujancollege.ac.in/media/images/DSC_0658_1.original.jpg",
+    "admissionProcess": [
+      "Prospective students complete an online application, providing academic records and a statement of purpose outlining their interest in emerging technologies.",
+      "Shortlisted applicants are invited for interviews to assess their suitability for the college's innovative programs.",
+      "Accepted candidates complete the enrollment process, including document verification and fee payment."
+    ],
+    "collegeRating": 4.5,
+    "numberOfResearch": 35,
+    "events": [
+      {
+        "id": 1,
+        "name": "TechFest 2024",
+        "description": "Experience the future at TechFest 2024, WonderTech University's annual tech extravaganza featuring workshops, demos, and tech competitions.",
+        "date": "15th March, 2024"
+      },
+      {
+        "id": 2,
+        "name": "International Food Fiesta",
+        "description": "Celebrate global culinary delights at the International Food Fiesta, with a variety of delicious dishes from around the world.",
+        "date": "20th April, 2024"
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 1,
+        "title": "The Potential of Nanotechnology",
+        "authors": ["Sophia Chen", "Robert Wilson"],
+        "abstract": "This research explores the potential of nanotechnology in various fields, from medicine to electronics.",
+        "publication": "Journal of Nanoscience",
+        "publicationDate": "5th March, 2024",
+        "link": "research-link-1"
+      },
+      {
+        "id": 2,
+        "title": "AI and Robotics Integration",
+        "authors": ["Emily White", "David Kim"],
+        "abstract": "This research paper investigates the integration of AI and robotics to create smart autonomous systems.",
+        "publication": "Conference on Artificial Intelligence",
+        "publicationDate": "12th March, 2024",
+        "link": "research-link-2"
+      }
+    ],
+    "sportsDescription": "WonderTech University encourages a healthy lifestyle and offers excellent sports facilities to nurture students' athletic talents.",
+    "sportsCategories": [
+      {
+        "id": 1,
+        "name": "Soccer",
+        "facilities": "Soccer Field, Changing Rooms, Soccer Equipment",
+        "teams": ["University Soccer Team"],
+        "upcomingEvent": "Intercollegiate Soccer Tournament - 5th March, 2024"
+      },
+      {
+        "id": 2,
+        "name": "Basketball",
+        "facilities": "Basketball Court, Changing Rooms, Basketball Equipment",
+        "teams": ["University Basketball Team"],
+        "upcomingEvent": "University Basketball League - 10th March, 2024"
+      },
+      {
+        "id": 3,
+        "name": "Swimming",
+        "facilities": "Swimming Pool, Changing Rooms, Swimming Gear",
+        "teams": ["University Swimming Team"],
+        "upcomingEvent": "Intercollegiate Swimming Championship - 15th March, 2024"
+      }
+    ],
+    "researchPaperLinks": [
+      {
+        "id": 1,
+        "title": "Sustainable Materials for Future",
+        "authors": ["Sophia Chen"],
+        "publication": "Journal of Sustainable Technologies",
+        "publicationDate": "8th March, 2024",
+        "link": "research-paper-link-1"
+      },
+      {
+        "id": 2,
+        "title": "Biomedical Applications of AI",
+        "authors": ["Emily White"],
+        "publication": "Conference on Biomedical Engineering",
+        "publicationDate": "14th March, 2024",
+        "link": "research-paper-link-2"
+      }
+    ],
+    "collegeId": "3871"
+  },
+  {
+    "collegeName": "EcoTech Institute",
+    "location": "Vancouver, Canada",
+    "admissionDateStart": "1st March, 2024",
+    "admissionDateEnd": "30th April, 2024",
+    "collegeImage": "https://www.ric.edu/sites/default/files/2021-01/Campus-Aerial-1900x924.jpg",
+    "admissionProcess": [
+      "Prospective students complete an online application, demonstrating their commitment to environmental sustainability and interest in green technologies.",
+      "Shortlisted candidates participate in group activities and interviews to assess their passion for eco-friendly innovation.",
+      "Accepted students complete the enrollment process, including document verification and fee payment."
+    ],
+    "collegeRating": 4.6,
+    "numberOfResearch": 60,
+    "events": [
+      {
+        "id": 1,
+        "name": "EcoTech Summit",
+        "description": "Join EcoTech Institute at the EcoTech Summit 2024, a global gathering focused on sustainable technologies and environmental conservation.",
+        "date": "15th May, 2024"
+      },
+      {
+        "id": 2,
+        "name": "Green Living Fair",
+        "description": "Experience sustainable living practices at the Green Living Fair, featuring eco-friendly products and workshops.",
+        "date": "20th June, 2024"
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 1,
+        "title": "Renewable Energy Revolution",
+        "authors": ["Sarah Thompson", "David Li"],
+        "abstract": "This research delves into the potential of renewable energy sources in reshaping the global energy landscape.",
+        "publication": "Journal of Sustainable Energy",
+        "publicationDate": "5th May, 2024",
+        "link": "research-link-1"
+      },
+      {
+        "id": 2,
+        "title": "Innovations in Waste Management",
+        "authors": ["John Miller", "Sophia Chen"],
+        "abstract": "This research paper explores innovative waste management practices to promote a circular economy.",
+        "publication": "Conference on Environmental Sciences",
+        "publicationDate": "12th May, 2024",
+        "link": "research-link-2"
+      }
+    ],
+    "sportsDescription": "EcoTech Institute promotes outdoor activities and offers eco-friendly sports facilities to encourage students' connection with nature.",
+    "sportsCategories": [
+      {
+        "id": 1,
+        "name": "Hiking",
+        "facilities": "Hiking Trails, Nature Guide, Eco-friendly Gear",
+        "teams": ["EcoTech Hiking Club"],
+        "upcomingEvent": "Eco Hike - 5th May, 2024"
+      },
+      {
+        "id": 2,
+        "name": "Cycling",
+        "facilities": "Cycling Routes, Eco-friendly Bicycles",
+        "teams": ["EcoTech Cycling Team"],
+        "upcomingEvent": "Eco Ride - 10th May, 2024"
+      },
+      {
+        "id": 3,
+        "name": "Canoeing",
+        "facilities": "Canoeing Expeditions, Eco-friendly Canoes",
+        "teams": ["EcoTech Canoeing Club"],
+        "upcomingEvent": "Eco Paddle - 15th May, 2024"
+      }
+    ],
+    "researchPaperLinks": [
+      {
+        "id": 1,
+        "title": "Sustainable Architecture",
+        "authors": ["David Li"],
+        "publication": "Journal of Green Building",
+        "publicationDate": "8th May, 2024",
+        "link": "research-paper-link-1"
+      },
+      {
+        "id": 2,
+        "title": "Zero-Waste Lifestyle",
+        "authors": ["Sophia Chen"],
+        "publication": "Conference on Sustainable Living",
+        "publicationDate": "14th May, 2024",
+        "link": "research-paper-link-2"
+      }
+    ],
+    "collegeId": "4725"
   }
 ]

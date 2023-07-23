@@ -10,6 +10,7 @@ import {
   signInWithPopup,
   signOut,
   updateProfile,
+  FacebookAuthProvider,
 } from "firebase/auth";
 import { app } from "../firebase/firebase.config";
 
@@ -38,6 +39,13 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     const googleProvider = new GoogleAuthProvider();
     return signInWithPopup(auth, googleProvider);
+  };
+
+  // facebook login
+  const facebookLogin = () => {
+    setLoading(true);
+    const facebookProvider = new FacebookAuthProvider();
+    return signInWithPopup(auth, facebookProvider);
   };
 
   // github login
@@ -76,6 +84,7 @@ const AuthProvider = ({ children }) => {
     googleLogin,
     githubLogin,
     resetPassword,
+    facebookLogin,
   };
   return (
     <UserContext.Provider value={authInfo}>{children}</UserContext.Provider>

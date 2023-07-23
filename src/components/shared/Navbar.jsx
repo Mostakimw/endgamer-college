@@ -29,7 +29,7 @@ const Navbar = () => {
     <>
       {user ? (
         <>
-          <div className="dropdown dropdown-end">
+          <div>
             <button
               onClick={handleLogout}
               className="bg-purple-500 hover:bg-purple-600 duration-300 text-gray-200 px-4 py-2 rounded-md"
@@ -37,7 +37,7 @@ const Navbar = () => {
               Logout
             </button>
             <Link to="/user-profile">
-              <button className="border-2 border-purple-500 hover:bg-purple-600 hover:text-gray-200 duration-300 text-gray-800 px-4 py-2 ml-2 rounded-md">
+              <button className="border-2 border-purple-500 hover:bg-purple-600 hover:text-gray-200 duration-300 text-gray-800 px-4 py-2 md:ml-2 max-sm:mt-1 rounded-md">
                 {user?.displayName}
               </button>
             </Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className="navbar bg-[#F1F0F0] drop-shadow-md px-48 mb-10">
+      <div className="navbar bg-[#F1F0F0] drop-shadow-md mb-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden ">

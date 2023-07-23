@@ -21,11 +21,17 @@ const Reviews = () => {
       return res.data;
     },
   });
+  const slidesPerView = {
+    320: 1,
+    640: 2,
+    768: 3,
+    1024: 4,
+  };
   return (
     <div className="mt-20">
       <SectionTitle title="Review" />
       <Swiper
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         freeMode={true}
         pagination={{

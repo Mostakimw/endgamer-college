@@ -42,6 +42,12 @@ const Admission = () => {
                     </div>
                   </td>
                   <td className="font-semibold text-xl text-gray-800 ">
+                    <span
+                      className="hover:cursor-default"
+                      title="You have already applied"
+                    >
+                      {college?.collegeName}
+                    </span>
                     <Link
                       to={`/admission/${college?.collegeId}`}
                       className="hover:underline"
@@ -51,7 +57,7 @@ const Admission = () => {
                   </td>
                   {/* <td>{college?.address}</td> */}
                   <td className="font-semibold text-xl text-gray-800">
-                    Rangpur, Bangladesh - 5400
+                    {college?.location}
                   </td>
                 </tr>
               ))}

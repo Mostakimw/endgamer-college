@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const CollegeCard = ({ college }) => {
   console.log(college);
   const {
+    _id,
     collegeImage,
     collegeName,
     admissionDateStart,
@@ -70,7 +71,7 @@ const CollegeCard = ({ college }) => {
               <h3 className="text-lg font-semibold mb-2">Sports</h3>
               <p className="text-gray-500">{sportsDescription}</p>
             </div>
-            <Link>
+            <Link to={`/colleges/${_id}`}>
               <button className="bg-purple-500 text-white mt-6 px-4 py-2 rounded hover:bg-purple-600 duration-300">
                 Details About This College
               </button>

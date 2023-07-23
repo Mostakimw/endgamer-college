@@ -9,7 +9,6 @@ import { useAuth } from "../../hooks/useAuth";
 const ApplyCollege = () => {
   const { user } = useAuth();
   const collegeData = useLoaderData();
-  console.log(collegeData);
   const handleSubmitForm = async (event) => {
     event.preventDefault();
     const form = event.target;
@@ -54,7 +53,7 @@ const ApplyCollege = () => {
         <Helmet>
           <title>Apply - EndGamer College</title>
         </Helmet>
-        <SectionTitle title="First Step TO Grow Future" />
+        <SectionTitle title={`Applying ${collegeData?.collegeName}`} />
         <form
           onSubmit={handleSubmitForm}
           className="grid grid-cols-2 gap-4 my-10 p-16 bg-gray-700 text-white rounded-md shadow-lg w-full"

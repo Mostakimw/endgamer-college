@@ -20,6 +20,7 @@ const CollegeDetails = () => {
     researchWorks,
     sportsDescription,
     sportsCategories,
+    location,
   } = collegeData;
   return (
     <Container>
@@ -51,7 +52,7 @@ const CollegeDetails = () => {
             </p>
             <p>
               <span className="font-semibold">Location: </span>{" "}
-              <span className="text-[#757575] text-sm">Dhaka</span>
+              <span className="text-[#757575] text-sm">{location}</span>
             </p>
             <p>
               <span className="font-semibold">Admission Date: </span>

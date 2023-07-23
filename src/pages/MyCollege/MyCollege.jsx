@@ -87,7 +87,7 @@ const MyCollege = () => {
               <p className="text-gray-800 font-semibold">
                 Location:{" "}
                 <span className="text-gray-700 font-normal">
-                  Dhaka, Bangladesh
+                  {collegeData?.location}
                 </span>
               </p>
 

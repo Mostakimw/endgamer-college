@@ -1,11 +1,11 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { UserContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 
 const Login = () => {
-  const { loginUser, googleLogin, githubLogin } = useContext(UserContext);
+  const { loginUser, googleLogin, facebookLogin } = useContext(UserContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -34,11 +34,21 @@ const Login = () => {
       .catch(() => setError(""));
   };
 
-  const handleGithubLogin = () => {
-    githubLogin()
-      .then(() => navigate(from, { replace: true }))
-      .catch(() => setError(""));
+  const handleFacebookLogin = () => {
+    facebookLogin()
+      .then((user) => {
+        console.log(user.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
+
+  // const handleGithubLogin = () => {
+  //   githubLogin()
+  //     .then(() => navigate(from, { replace: true }))
+  //     .catch(() => setError(""));
+  // };
   return (
     <div className="hero bg-base-100">
       <Helmet>
@@ -116,12 +126,12 @@ const Login = () => {
                 Continue with Google
               </button>
               <button
-                onClick={handleGithubLogin}
+                onClick={handleFacebookLogin}
                 className="flex items-center bg-gray-950 text-white mt-3  py-2 px-4 rounded-md"
               >
                 {" "}
-                <FaGithub className="mr-2 text-xl"></FaGithub> Continue with
-                Github
+                <FaFacebook className="mr-2 text-xl"></FaFacebook> Continue with
+                Facebook
               </button>
             </div>
           </div>
