@@ -3,6 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { UserContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
+import { saveUserToDb } from "../../api/Auth";
 
 const Login = () => {
   const { loginUser, googleLogin, facebookLogin } = useContext(UserContext);
@@ -28,7 +29,8 @@ const Login = () => {
   };
   const handleGoogleLogin = () => {
     googleLogin()
-      .then(() => {
+      .then((data) => {
+        saveUserToDb(data.user);
         navigate(from, { replace: true });
       })
       .catch(() => setError(""));

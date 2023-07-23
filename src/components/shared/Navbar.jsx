@@ -55,7 +55,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className="navbar bg-[#F1F0F0] drop-shadow-md mb-10">
+      <div className="navbar bg-[#F1F0F0] drop-shadow-md lg:px-36 mb-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden ">
@@ -81,13 +81,13 @@ const Navbar = () => {
               {navItem}
             </ul>
           </div>
-          <a className="hover:cursor-pointer normal-case text-xl p-0">
+          <Link to="/" className="hover:cursor-pointer normal-case text-xl p-0">
             <img
-              src="https://png.pngtree.com/png-vector/20220503/ourmid/pngtree-admission-open-tag-abstract-shape-png-png-image_4562208.png"
+              src="https://i.ibb.co/Mhf44Gg/EndGamer.png"
               width={80}
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex my-nav">
           <ul className="menu menu-horizontal px-1">{navItem}</ul>

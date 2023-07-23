@@ -18,7 +18,7 @@ Welcome to the College Admission and Reviews Website! This web application allow
 - Search for colleges by name
 - Responsive design for all devices
 
-Technologies Used:
+# Technologies Used:
 
 - Frontend: React.js, Tailwind CSS, Swiper.js, React Query, React Router, Tanstack Query, Axios, React rating, SweetAlert2
 - Backend: Node.js, Express, MongoDB
