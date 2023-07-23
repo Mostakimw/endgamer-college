@@ -8,29 +8,17 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 import SectionTitle from "../../../components/SectionTitle";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 const Reviews = () => {
-  const reviews = [
-    {
-      id: 1,
-      collegeId: 1,
-      userName: "John Doe",
-      rating: 4.5,
-      reviewText:
-        "Great college with excellent facilities and supportive staff.",
-      date: "July 15, 2023",
+  const { data: reviews = [] } = useQuery({
+    queryKey: ["reviews"],
+    queryFn: async () => {
+      const res = await axios.get(`${import.meta.env.VITE_API_LINK}/reviews`);
+      return res.data;
     },
-    {
-      id: 2,
-      collegeId: 1,
-      userName: "Jane Smith",
-      rating: 5,
-      reviewText:
-        "I had an amazing experience at this college. Highly recommended!",
-      date: "August 2, 2023",
-    },
-  ];
-
+  });
   return (
     <div className="mt-20">
       <SectionTitle title="Review" />
@@ -52,14 +40,18 @@ const Reviews = () => {
           >
             <div key={review.id} className="bg-white p-4 rounded shadow-md">
               <div className="flex items-center mb-2">
-                <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white mr-2">
-                  {review.userName.charAt(0).toUpperCase()}
+                <div className="w-8 h-8 mr-2">
+                  <img
+                    src={review.candidateProfilePic}
+                    alt="user profile"
+                    className="rounded-full w-full h-full"
+                  />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-gray-900 font-medium">
-                    {review.userName}
+                    {review.candidateName}
                   </span>
-                  <span className="text-gray-600">{review.date}</span>
+                  <span className="text-gray-600">{review.reviewDate}</span>
                 </div>
               </div>
               <div className="flex items-center">

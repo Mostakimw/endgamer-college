@@ -4,8 +4,10 @@ import Container from "../../components/Container";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useLoaderData } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 
 const ApplyCollege = () => {
+  const { user } = useAuth();
   const collegeData = useLoaderData();
   console.log(collegeData);
   const handleSubmitForm = async (event) => {
@@ -85,7 +87,6 @@ const ApplyCollege = () => {
             <input
               type="text"
               name="phone"
-              // defaultValue={user?.displayName}
               className="w-2/3 py-2 add-class-input px-2 text-[#757575]"
             />
           </div>
@@ -94,7 +95,7 @@ const ApplyCollege = () => {
             <input
               type="text"
               name="email"
-              // defaultValue={user?.email}
+              value={user?.email}
               className="w-2/3 py-2 add-class-input px-2 text-[#757575]"
             />
           </div>
