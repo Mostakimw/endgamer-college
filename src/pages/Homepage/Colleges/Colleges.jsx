@@ -1,11 +1,8 @@
 import SectionTitle from "../../../components/SectionTitle";
+// import Search from "../Search/Search";
 import CollegeCard from "./CollegeCard";
-import useColleges from "../../../hooks/useColleges";
 
-const Colleges = () => {
-  const [colleges] = useColleges();
-  console.log(colleges);
-
+const Colleges = ({ colleges }) => {
   return (
     <div className="my-20">
       <SectionTitle title="Top Colleges" />

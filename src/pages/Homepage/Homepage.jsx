@@ -4,9 +4,11 @@ import Colleges from "./Colleges/Colleges";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import ResearchPaperLinks from "./ResearchPaperLinks/ResearchPaperLinks";
 import Reviews from "./Reviews/Reviews";
+import useColleges from "../../hooks/useColleges";
 import Search from "./Search/Search";
 
 const Homepage = () => {
+  const [colleges] = useColleges();
   return (
     <Container>
       <Helmet>
@@ -14,7 +16,7 @@ const Homepage = () => {
       </Helmet>
       <>
         <Search />
-        <Colleges />
+        <Colleges colleges={colleges} />
         <ImageGallery />
         <ResearchPaperLinks />
         <Reviews />
