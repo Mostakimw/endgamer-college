@@ -22,7 +22,7 @@ const MyCollege = () => {
       return res.data;
     },
   });
-  const { collegeData, candidateName, candidateProfilePic, subject, address } =
+  const { collegeData, candidateName, candidateProfilePic, subject } =
     candidate;
 
   const [reviewText, setReviewText] = useState("");

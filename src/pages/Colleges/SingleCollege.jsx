@@ -3,15 +3,7 @@ import Rating from "react-rating";
 import { Link } from "react-router-dom";
 
 const SingleCollege = ({ college }) => {
-  const {
-    collegeImage,
-    collegeName,
-    admissionDateStart,
-    admissionDateEnd,
-    events,
-    sportsDescription,
-    researchWorks,
-  } = college;
+  const { _id, admissionDateStart, admissionDateEnd, collegeRating } = college;
   return (
     <div className="card card-compact w-full bg-base-100 shadow-xl">
       <figure>
@@ -35,7 +27,7 @@ const SingleCollege = ({ college }) => {
           <p className="flex items-center gap-2">
             <span>Rating: </span>
             <Rating
-              placeholderRating={4.5}
+              placeholderRating={collegeRating}
               emptySymbol={<FaRegStar></FaRegStar>}
               placeholderSymbol={<FaStar className="text-yellow-500"></FaStar>}
               fullSymbol={<FaStar></FaStar>}
@@ -43,7 +35,7 @@ const SingleCollege = ({ college }) => {
           </p>
         </div>
         <div className="card-actions justify-center">
-          <Link>
+          <Link to={`/colleges/${_id}`}>
             <button className="bg-purple-500 text-white mt-6 px-8 py-2 font-semibold rounded hover:bg-purple-600 duration-300">
               Details
             </button>

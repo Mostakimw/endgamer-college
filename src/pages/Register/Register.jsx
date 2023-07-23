@@ -47,7 +47,7 @@ const Register = () => {
           .then(() => {
             // save user to db
             saveUserToDb(userData);
-            // navigate(from, { replace: true });
+            navigate(from, { replace: true });
           })
           .catch(() => {});
       })

@@ -10,6 +10,8 @@ import { FreeMode, Pagination } from "swiper/modules";
 import SectionTitle from "../../../components/SectionTitle";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import Rating from "react-rating";
+import { FaRegStar, FaStar } from "react-icons/fa";
 
 const Reviews = () => {
   const { data: reviews = [] } = useQuery({
@@ -34,7 +36,7 @@ const Reviews = () => {
       >
         {reviews.map((review) => (
           <SwiperSlide
-            key={review.id}
+            key={review._id}
             className="swiper-slide"
             style={{ maxWidth: "300px" }}
           >
@@ -55,7 +57,17 @@ const Reviews = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <span className="text-yellow-500 text-xl">{review.rating}</span>
+                <p className="flex items-center gap-2">
+                  <span>Rating: </span>
+                  <Rating
+                    placeholderRating={review.rating}
+                    emptySymbol={<FaRegStar></FaRegStar>}
+                    placeholderSymbol={
+                      <FaStar className="text-purple-500"></FaStar>
+                    }
+                    fullSymbol={<FaStar></FaStar>}
+                  />
+                </p>
               </div>
               <p className="text-gray-800 mt-3">{review.reviewText}</p>
             </div>
