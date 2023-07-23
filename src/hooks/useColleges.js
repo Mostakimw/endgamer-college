@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useAuth } from "./useAuth";
 import axios from "axios";
 
-export const useColleges = () => {
+const useColleges = () => {
   const { loading } = useAuth();
   const { data: colleges = [], refetch } = useQuery({
     queryKey: ["colleges"],
@@ -14,6 +14,8 @@ export const useColleges = () => {
   });
   return [colleges, refetch];
 };
+
+export default useColleges;
 
 // export const useCandidates = ()=>{
 //   const {data: candidate = [], refetch}=useQuery({

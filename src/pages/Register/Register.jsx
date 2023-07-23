@@ -1,11 +1,12 @@
-import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import { UserContext } from "../../providers/AuthProvider";
-import { updateProfile } from "firebase/auth";
+import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { useAuth } from "../../hooks/useAuth";
+import { saveUserToDb } from "../../api/Auth";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
-  const { registerUser } = useContext(UserContext);
+  const { registerUser, updateUserProfile } = useAuth();
   const [user, setUser] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -13,6 +14,11 @@ const Register = () => {
   const [photoUrl, setPhotoUrl] = useState("");
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
+  const userData = { email, name };
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -33,29 +39,28 @@ const Register = () => {
 
     registerUser(email, password)
       .then((result) => {
+        console.log(result);
         setUser(true);
         registerSuccess();
         setSuccess("Registration Successful");
-        updateUserProfile(result.user, name, photoUrl);
+        updateUserProfile(result.user?.name, result.user?.photoUrl)
+          .then(() => {
+            // save user to db
+            saveUserToDb(userData);
+            // navigate(from, { replace: true });
+          })
+          .catch(() => {});
       })
       .catch(() => {
         setError("");
       });
   };
 
-  const updateUserProfile = (user, name, photoUrl) => {
-    updateProfile(user, {
-      displayName: name,
-      photoURL: photoUrl,
-    })
-      .then(() => {})
-      .catch(() => {
-        setError("");
-      });
-  };
-
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Register - EndGamer College</title>
+      </Helmet>
       <div className="hero bg-base-100">
         <div className="hero-content flex-col">
           <div className="text-center">
@@ -138,7 +143,7 @@ const Register = () => {
           </form>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
