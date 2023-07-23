@@ -10,6 +10,8 @@ import MyCollege from "../pages/MyCollege/MyCollege";
 import ApplyCollege from "../pages/ApplyCollege/ApplyCollege";
 import PrivateRoute from "./PrivateRoute";
 import CollegeDetails from "../pages/CollegeDetails/CollegeDetails";
+import EditProfile from "../pages/EditProfile/EditProfile";
+import ResetPassword from "../pages/ResetPassword/ResetPassword";
 
 export const router = createBrowserRouter([
   {
@@ -61,12 +63,21 @@ export const router = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: "reset-password",
+        element: <ResetPassword />,
+      },
+      {
         path: "register",
         element: <Register />,
       },
       {
         path: "user-profile",
         element: <UserProfile />,
+      },
+      {
+        path: "edit-profile",
+        element: <EditProfile />,
+        // loader: ({params})=> fetch(`${import.meta.env.VITE_API_LINK}/users?email=${user?.email}`)
       },
     ],
   },

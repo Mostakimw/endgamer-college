@@ -44,7 +44,7 @@ const ApplyCollege = () => {
       Swal.fire({
         icon: "success",
         title: "Great...",
-        text: "Your has been applied successfully!",
+        text: "You has been applied successfully!",
       });
     }
   };

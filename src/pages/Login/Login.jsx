@@ -75,6 +75,14 @@ const Login = () => {
                 className="input input-bordered"
               />
             </div>
+            <div>
+              <Link
+                to="/reset-password"
+                className="text-sm text-gray-700 underline mt-2"
+              >
+                Reset Password
+              </Link>
+            </div>
             <div className="form-control mt-6">
               <button
                 onClick={loginHandle}
