@@ -37,7 +37,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/colleges/${params.id}`),
+          fetch(`${import.meta.env.VITE_API_LINK}/colleges/${params.id}`),
       },
       {
         path: "admission",
@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/college/${params.collegeId}`),
+          fetch(`${import.meta.env.VITE_API_LINK}/college/${params.collegeId}`),
       },
       {
         path: "my-college",

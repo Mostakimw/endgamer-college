@@ -6,6 +6,7 @@ import SectionTitle from "../../components/SectionTitle";
 
 const AllColleges = () => {
   const [colleges] = useColleges();
+  console.log(colleges);
 
   return (
     <Container>

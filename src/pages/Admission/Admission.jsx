@@ -42,12 +42,12 @@ const Admission = () => {
                     </div>
                   </td>
                   <td className="font-semibold text-xl text-gray-800 ">
-                    <span
+                    {/* <span
                       className="hover:cursor-default"
                       title="You have already applied"
                     >
                       {college?.collegeName}
-                    </span>
+                    </span> */}
                     <Link
                       to={`/admission/${college?.collegeId}`}
                       className="hover:underline"

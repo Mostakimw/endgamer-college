@@ -3,12 +3,14 @@ import Rating from "react-rating";
 import { Link } from "react-router-dom";
 
 const SingleCollege = ({ college }) => {
+  console.log(college);
   const {
     _id,
     admissionDateStart,
     admissionDateEnd,
     collegeRating,
     collegeImage,
+    collegeName,
   } = college;
   return (
     <div className="card card-compact w-full bg-base-100 shadow-xl">
@@ -16,7 +18,7 @@ const SingleCollege = ({ college }) => {
         <img src={collegeImage} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">College Name</h2>
+        <h2 className="card-title">{collegeName}</h2>
         <p className=" mt-2">
           Admission Start:{" "}
           <span className="text-[#757575] text-sm">
