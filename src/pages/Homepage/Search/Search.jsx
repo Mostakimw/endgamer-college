@@ -23,12 +23,12 @@ const Search = () => {
           type="text"
           onChange={(e) => setSearchText(e.target.value)}
           placeholder="Search Colleges"
-          className="input input-bordered w-full"
+          className="input input-bordered rounded-r-none w-full"
         />
         <button
           onClick={handleSearch}
           type="button"
-          className="btn btn-primary"
+          className="bg-purple-500 text-white px-8 py-2 font-semibold rounded hover:bg-purple-600 duration-300 rounded-l-none"
         >
           Search
         </button>
